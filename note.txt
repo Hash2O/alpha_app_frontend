@@ -1,3 +1,17 @@
 npx create-next-app@latest
 npm run dev
 npm install zustand (gestion des services et du state)
+npm i zod (dépendances pour générer les forms)
+=> librairie front : ui.shadcn.com
+npx shadcn@latest init
+=> composants :
+npx shadcn@latest add card
+npx shadcn@latest add button
+npx shadcn@latest add label
+npx shadcn@latest add input
+=> Librairie React : React Hook Form (https://react-hook-form.com/get-started)
+npm install react-hook-form
+=> Connecter les schemas Zod a React Hook Form : 
+npm i @hookform/resolvers
+=> Bibliotheque Icones : 
+npm i lucide-react 
