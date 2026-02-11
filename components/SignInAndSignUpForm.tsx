@@ -20,7 +20,7 @@ export default function SignInAndSignUpForm() {
   // Génération d'un state pour savoir quel formulaire afficher [state, fonction qui va changer le state]
   const [isLogin, setIsLogin] = useState(false);
   //Récupération des données depuis le hook
-  const { login, register: registerUser, isLoading, error, clearError} = useAuthStore;
+  const { login, register: registerUser, isLoading, error, clearError } = useAuthStore();
   const router = useRouter();
 
   // Gestion des datas : si login, on affiche LoginForm, sinon RegisterForm
@@ -119,7 +119,7 @@ export default function SignInAndSignUpForm() {
                                         id="password" 
                                         type="password" 
                                         placeholder="Mot de Passe" 
-                                        { ...form.register('email')} 
+                                        { ...form.register('password')} 
                                         className='pl-10 bg-slate-700/50 border-slate-600 text-white placeholder:text-slate-400' />
                                 </div>
                                 {form.formState.errors.password && (

@@ -8,7 +8,7 @@ export const loginSchema = z.object({
 export const registerSchema = z.object({
     name: z.string().min(3, { message: 'Le nom choisi est trop court (3 caractères min).' }).max(25, { message: 'Le nom choisi est trop long (25 caractères max).' }),
     email: z.email({ message: 'Cet email est invalide.' }),
-    password: z.string().min(38, { message: 'Le mot de passe choisi est trop court (8 caractères min).' }).max(50, { message: 'Le mot de passe choisi est trop long.' }),
+    password: z.string().min(8, { message: 'Le mot de passe choisi est trop court (8 caractères min).' }).max(50, { message: 'Le mot de passe choisi est trop long.' }),
 })
 
 export const updateUserSchema = z.object({
