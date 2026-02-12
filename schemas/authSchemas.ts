@@ -19,4 +19,4 @@ export const updateUserSchema = z.object({
 // Initialisation des schémas de validation
 export type LoginFormData = z.infer<typeof loginSchema>;
 export type RegisterFormData = z.infer<typeof registerSchema>;
-export type updateUserFormData = z.infer<typeof updateUserSchema>;
+export type UpdateUserFormData = z.infer<typeof updateUserSchema>;
